@@ -12,19 +12,19 @@
 
         //Min
         int minimum = list.Min();
-        Console.WriteLine(minimum);
+        Console.WriteLine($"Minimum element of list: {minimum}");
 
         //Max
         int maximum = list.Max();
-        Console.WriteLine(maximum);
+        Console.WriteLine($"Maximum element of list: {maximum}");
 
         //LastIndexOf
         int lastindex = list.LastIndexOf(47);
-        Console.WriteLine(lastindex);
+        Console.WriteLine($"LastIndexOf element: {lastindex}");
 
         //Contains
         bool isExist = list.Contains(33);
-        Console.WriteLine(isExist);
+        Console.WriteLine($"Is Exist element: {isExist}");
 
         //Remove Range
         list.RemoveRange(2, 2);
@@ -32,6 +32,10 @@
         //CopyTo
         int[] list2 = new int[list.Count];
         list.CopyTo(list2);
+
+        //New List
+        Console.WriteLine();
+        Console.WriteLine("My new list");
         foreach (var mylist2 in list2)
         {
             Console.WriteLine(mylist2);
@@ -39,6 +43,7 @@
         Console.WriteLine("************************");
 
         //Show list
+        Console.WriteLine("My list");
         foreach (var mylist in list)
         {
             Console.WriteLine(mylist);
